@@ -18,6 +18,7 @@ return {
         },
       },
     })
-    vim.keymap.set("n", "<C-s>", ":Neotree filesystem reveal right<CR>", {})
+    local keymap = vim.keymap
+    keymap.set("n", "<C-s>", ":Neotree filesystem reveal right<CR>", {})
   end,
 }
