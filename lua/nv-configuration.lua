@@ -8,7 +8,7 @@ local keymap = vim.keymap -- alias for vim.keymap.set
 vim.g.mapleader = " "
 keymap.set("n", "<leader>sa", ":wa<CR>", {})
 -- set relative and absolute line numbers
-keymap.set("n", "<C-n>", ":set relativenumber!<CR>", {})
+keymap.set("n", "<C-n>", ":set number relativenumber!<CR>", {})
 
 -- split windows
 keymap.set("n", "<leader>sh", ":split<CR>", {})
@@ -18,6 +18,6 @@ keymap.set("n", "<leader>q", ":close<CR>", {})
 
 -- Gvdiffsplit!
 keymap.set("n", "<leader>gv", ":Gvdiffsplit!<CR>", {})
-
+keymap.set("n", "<leader>KI", ":d500<CR>", {})
 -- wqa 
 keymap.set("n", "<leader>qe", ":wqa<CR>", {})

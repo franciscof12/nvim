@@ -16,13 +16,10 @@ return {
 		dap.listeners.before.launch.dapui_config = function()
 			dapui.open()
 		end
-		dap.listeners.before.event_terminated.dapui_config = function()
-			dapui.close()
-		end
-		dap.listeners.before.event_exited.dapui_config = function()
-			dapui.close()
-		end
-		vim.keymap.set("n", "<Leader>dt", dap.toggle_breakpoint, {})
-		vim.keymap.set("n", "<Leader>dc", dap.continue, {})
+		vim.keymap.set("n", "<Leader>db", dap.toggle_breakpoint, {})
+		vim.keymap.set("n", "<Leader>dd", dap.continue, {})
+    vim.keymap.set("n", "<Leader>so", dap.step_over, {})
+    vim.keymap.set("n", "<Leader>si", dap.step_into, {})
+    vim.keymap.set("n", "<Leader>sx", dap.step_out, {})
 	end,
 }
