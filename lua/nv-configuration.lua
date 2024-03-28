@@ -18,6 +18,5 @@ keymap.set("n", "<leader>q", ":close<CR>", {})
 
 -- Gvdiffsplit!
 keymap.set("n", "<leader>gv", ":Gvdiffsplit!<CR>", {})
-keymap.set("n", "<leader>KI", ":d500<CR>", {})
 -- wqa 
 keymap.set("n", "<leader>qe", ":wqa<CR>", {})
